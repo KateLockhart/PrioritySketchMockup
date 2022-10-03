@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+nav {
+  height: 20vh;
+  width: 100%;
+  background-image: linear-gradient(#6c63ff, #f9fafb);
+  color: #f9fafb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #6c63ff;
+  border: 2px solid #f9fafb;
+  border-radius: 4px;
+  color: #f9fafb;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 70vw;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.infoDiv {
+  padding: 5%;
+}
+
+b {
+  font-size: 100px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.imgDiv {
+  padding: 5%;
+}
+
+.homeImg {
+  width: 40vh;
+  height: 25vw;
+}
