@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Join Priorities</title>
   </head>
   <body>
@@ -17,9 +17,59 @@
       </a>
     </nav>
 
-    <main>
-      <h2>Create a Priorities Account</h2>
-      <form action=""></form>
+    <main id="signUpMain">
+      <form id="signUpForm">
+        <h2 id="formTitle">Create An Account</h2>
+        <div class="formControl">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+        </div>
+        <div class="formControl">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+        </div>
+        <div class="formControl">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+        </div>
+        <div class="formControl">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+          />
+        </div>
+        <div class="formControl">
+          <label for="notifications">Notifications</label>
+          <input
+            type="checkbox"
+            id="checkboxInput"
+            id="notifications"
+            value="true"
+          />
+          <label for="notifications" id="checkboxLabel">
+            I would like to receive notifications of my Priorities.
+          </label>
+        </div>
+        <div class="formControl">
+          <label for="notificationPreference">Notification Preference</label>
+          <select name="preference" id="notificationPreference" size="1">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+          </select>
+        </div>
+        <div class="formControl">
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            placeholder="Enter phone number"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
+        </div>
+        <button type="submit" id="formButton">Submit</button>
+      </form>
     </main>
 
     <footer>© 2022 <a href="privacy.html">Privacy Policy</a></footer>
