@@ -202,3 +202,28 @@ form button {
   align-items: center;
   justify-content: center;
 }
+
+/* MATRIX STYLING  */
+#matrixMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2%;
+  padding-top: 0;
+}
+
+.matrixSection {
+  height: 30vh;
+  width: 40vw;
+  margin: 1%;
+}
+
+.matrixTitles {
+  text-decoration: underline;
+}
+
+/* CREATE PRIORITY STYLING */
+
+/* CATEGORY STYLING */

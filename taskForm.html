@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Add a Priority</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">
+        <button>Home</button>
+      </a>
+      <a href="./matrix.html">
+        <button>Matrix</button>
+      </a>
+    </nav>
+
+    <main>
+      <form id="createPriorityForm">
+        <h2 id="formTitle">Add a Priority</h2>
+        <div class="formControl">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="Enter title of your priority"
+          />
+        </div>
+        <div class="formControl">
+          <label for="description">Description</label>
+          <textarea
+            type="text"
+            id="description"
+            placeholder="Describe the priority"
+            rows="4"
+            cols="46"
+          ></textarea>
+        </div>
+        <div class="formControl">
+          <label for="importance">Importance (between 1 and 10)</label>
+          <input type="range" id="importance" min="1" max="10" />
+        </div>
+        <div class="formControl">
+          <label for="urgency">Urgency (between 1 and 10)</label>
+          <input type="range" id="urgency" min="1" max="10" />
+        </div>
+        <div class="formControl">
+          <label for="catagory">Category</label>
+          <!-- <input
+            type="radio"
+            id="radioInput"
+            id="category"
+            value="none"
+            disabled
+          />
+          <label for="category" id="radioLabel">
+            You have not added a category, use the Add Category button to create
+            catagories.
+          </label> -->
+          <input type="radio" id="radioInput" id="category" value="work" />
+          <label for="category" id="radioLabel"> Work </label>
+          <input type="radio" id="radioInput" id="category" value="learning" />
+          <label for="category" id="radioLabel"> Learning </label>
+          <input type="radio" id="radioInput" id="category" value="chores" />
+          <label for="category" id="radioLabel"> Chores </label>
+          <button
+            id="addCategoryButton"
+            style="font-size: 16px; margin-bottom: 20px"
+          >
+            <a href="./category.html"> Add Category</a>
+          </button>
+        </div>
+        <button type="submit" id="formButton">Submit</button>
+      </form>
+    </main>
+
+    <footer>© 2022 <a href="./privacy.html">Privacy Policy</a></footer>
+  </body>
+</html>
